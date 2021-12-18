@@ -1,2 +1,3 @@
-# creative-fabric
-Creative Front-end development experiments - Dec 2021
+# Creative fabric - Décembre 2021
+
+Expérimentations en dévloppement Front-end créatif, basé sur des articles de [_Codrops_](https://tympanus.net/codrops/).
