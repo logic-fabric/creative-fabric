@@ -19,7 +19,39 @@
     <!-- Custom CSS: -->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/dialog.css" />
+
+    <!-- Custom CSS: -->
+    <script src="js/main.js" defer></script>
   </head>
 
-  <body></body>
+  <body>
+    <h1>Dialog Element Implementation</h1>
+
+    <p>
+      <b>Source:</b> <i>Codrops</i> article:
+      <i>How to Implement and Style the Dialog Element</i>
+    </p>
+
+    <button id="dialog-open-btn">Open dialog</button>
+
+    <dialog
+      aria-labelledby="dialog-title"
+      aria-describedby="dialog-description"
+    >
+      <img src="https://native-dialog.surge.sh/location-service.svg" alt="" width="240" />
+
+      <h2 id="dialog-title">Go to the <i>Codrops</i> article?</h2>
+
+      <p id="dialog-description">
+        View the original <i>Codrops</i> article
+        <em>How to Implement and Style the Dialog Element</em>.
+      </p>
+
+      <div class="dialog-buttons">
+        <button id="dialog-close-btn">Close</button>
+        <button id="dialog-confirm-btn">Go to article</button>
+      </div>
+    </dialog>
+  </body>
 </html>
