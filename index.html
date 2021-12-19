@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="css/dialog.css" />
 
     <!-- Custom CSS: -->
-    <script src="js/main.js" defer></script>
+    <script type="module" src="js/main.js"></script>
   </head>
 
   <body>
@@ -39,17 +39,17 @@
       <ul>
         <li>
           Focus the first interactive element in the modal once the dialog opens
-          <b>(done with a HTML native dialog)</b>
+          <b>(native for HTML dialog element)</b>
         </li>
         <li>Trap focus inside the modal</li>
         <li>Provide at least one button to close the dialog</li>
         <li>
           Prevent interaction with the rest of the page
-          <b>(done with a HTML native dialog)</b>
+          <b>(native for HTML dialog element)</b>
         </li>
         <li>
           Close the dialog when the user presses ESC
-          <b>(done with a HTML native dialog)</b>
+          <b>(native for HTML dialog element)</b> or disable it
         </li>
         <li>
           Return focus to the element that opened the dialog in the first place
@@ -79,7 +79,12 @@
 
       <div class="dialog-buttons">
         <button id="close-dialog-btn">Close</button>
-        <button id="confirm-dialog-btn">Go to article</button>
+        <a 
+          href="https://tympanus.net/codrops/2021/10/06/how-to-implement-and-style-the-dialog-element" 
+          target="_blank"
+        >
+          <button id="confirm-dialog-btn">Go to article</button>
+        </a>
       </div>
     </dialog>
   </body>

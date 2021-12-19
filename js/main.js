@@ -1,3 +1,9 @@
+/* -------------------------------------------------------------------------
+   WARNING: native <dialog> element is not supported by Firefox, Safari & IE.
+   GoogleChrome provides a polyfill to overcome it:
+   https://github.com/GoogleChrome/dialog-polyfill
+   ------------------------------------------------------------------------- */
+
 const dialog = document.querySelector("dialog");
 
 const dialogInteractiveElements = dialog.querySelectorAll(
