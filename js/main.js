@@ -24,14 +24,24 @@ function trapFocus(event) {
   }
 }
 
+function disableEscapeClosing() {
+  dialog.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      event.preventDefault();
+    }
+  });
+}
+
 function openDialog() {
   dialog.showModal();
   dialog.addEventListener("keydown", trapFocus);
+  dialog.addEventListener("keydown", disableEscapeClosing);
 }
 
 function closeDialog() {
   dialog.close();
   dialog.removeEventListener("keydown", trapFocus);
+  dialog.removeEventListener("keydowm", disableEscapeClosing);
 
   // Returns focus to the last active element:
   openDialogBtn.focus();
