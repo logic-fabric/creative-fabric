@@ -26,20 +26,49 @@
   </head>
 
   <body>
-    <h1>Dialog Element Implementation</h1>
+    <h1>Dialog element implementation</h1>
 
     <p>
-      <b>Source:</b> <i>Codrops</i> article:
+      <b>Source:</b> <i>Codrops</i> article
       <i>How to Implement and Style the Dialog Element</i>
     </p>
 
-    <button id="dialog-open-btn">Open dialog</button>
+    <section>
+      <h2>Good practices for a dialog element</h2>
+
+      <ul>
+        <li>
+          Focus the first interactive element in the modal once the dialog opens
+          <b>(done with a HTML native dialog)</b>
+        </li>
+        <li>Trap focus inside the modal</li>
+        <li>Provide at least one button to close the dialog</li>
+        <li>
+          Prevent interaction with the rest of the page
+          <b>(done with a HTML native dialog)</b>
+        </li>
+        <li>
+          Close the dialog when the user presses ESC
+          <b>(done with a HTML native dialog)</b>
+        </li>
+        <li>
+          Return focus to the element that opened the dialog in the first place
+        </li>
+    </section>
+    
+    </ul>
+
+    <button id="dialog-open-btn">Open an example dialog</button>
 
     <dialog
       aria-labelledby="dialog-title"
       aria-describedby="dialog-description"
     >
-      <img src="https://native-dialog.surge.sh/location-service.svg" alt="" width="240" />
+      <img
+        src="https://native-dialog.surge.sh/location-service.svg"
+        alt=""
+        width="240"
+      />
 
       <h2 id="dialog-title">Go to the <i>Codrops</i> article?</h2>
 
