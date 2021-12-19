@@ -58,7 +58,7 @@
     
     </ul>
 
-    <button id="open-dialog-btn">Open an example dialog</button>
+    <button class="btn" id="open-dialog-btn">Open an example dialog</button>
 
     <dialog
       aria-labelledby="dialog-title"
@@ -77,13 +77,15 @@
         <em>How to Implement and Style the Dialog Element</em>.
       </p>
 
-      <div class="dialog-buttons">
-        <button id="close-dialog-btn">Close</button>
-        <a 
+      <div class="dialog__buttons">
+        <button class="btn" id="close-dialog-btn">Close</button>
+        <a
+          class="btn btn--cta" 
+          id="confirm-dialog-btn"
           href="https://tympanus.net/codrops/2021/10/06/how-to-implement-and-style-the-dialog-element" 
           target="_blank"
         >
-          <button id="confirm-dialog-btn">Go to article</button>
+          Go to article
         </a>
       </div>
     </dialog>

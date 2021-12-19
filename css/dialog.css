@@ -1,5 +1,30 @@
 dialog {
+  max-width: 30rem;
   padding: 2rem 3rem;
   border: none;
   border-radius: 1rem;
+
+  color: #333;
+}
+
+dialog::backdrop {
+  background: rgba(30, 0, 0, 0.2);
+  backdrop-filter: blur(0.125rem);
+}
+
+dialog img {
+  display: block;
+
+  margin: auto;
+}
+
+.dialog__buttons {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 2rem 0 0 0;
+}
+
+dialog .btn {
+  width: 10rem;
 }
