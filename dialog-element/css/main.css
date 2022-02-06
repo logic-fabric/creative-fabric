@@ -35,7 +35,7 @@ h2 {
   text-align: center;
   text-decoration: none;
 
-  background: whitesmoke;
+  background: #f0f0ff;
   cursor: pointer;
 }
 
@@ -44,7 +44,7 @@ h2 {
 }
 
 .btn:hover {
-  background: oldlace;
+  background: #ccccff;
 }
 
 .btn:focus,
